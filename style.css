@@ -13,7 +13,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #5b4164;
+	background-color: #2f3f6f;
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
 	padding: 0.3rem 0.6rem;
 	display: flex;
 	flex-direction: column;
-	background-color: #7676a0;
+	background-color: #fafafa;
 }
 
 .input-container {
@@ -49,7 +49,7 @@ body {
 	outline: none;
 }
 
-.input-container button {
+.input-container #button-task {
 	padding: 0.5rem 0.75rem;
 	border: 1px solid transparent;
 	border-radius: 0.25rem;
@@ -58,7 +58,7 @@ body {
 	cursor: pointer;
 }
 
-.input-container button:hover {
+.input-container #button-task:hover {
 	filter: brightness(1.1);
 }
 
@@ -72,18 +72,35 @@ body {
 	align-items: start;
 	gap: 0.5rem;
 	margin-top: 1.5rem;
+	overflow-y: auto;
 }
 
-.task-container li {
-	font-size: 0.9rem;
-	font-weight: 400;
-	list-style: none;
-	background-color: #8d80da;
-	width: 100%;
-	padding: 0.2rem 0.4rem;
+.task-container div {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: #cbcdda;
+	width: 100%;
+	padding: 0.2rem 0.4rem;
+}
+
+.task-container div li {
+	font-size: 0.9rem;
+	font-weight: 400;
+	list-style: none;
+	color: #0f0f0f;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.task-container .line-through {
+	text-decoration: line-through;
+}
+
+.task-container .decoration-none {
+	text-decoration: none;
 }
 
 .task-container li span {
