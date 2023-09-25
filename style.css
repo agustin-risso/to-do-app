@@ -1,1 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&display=swap");
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #5b4164;
+}
+
+.container {
+	width: 20rem;
+	height: 30rem;
+	border: 2px solid #000000;
+	padding: 0.3rem 0.6rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #7676a0;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.input-container h1 {
+	font-weight: 600;
+	font-size: 2.1rem;
+}
+
+.input-container input {
+	border: 1px solid #cfcfcf;
+	border-radius: 0.25rem;
+	padding: 0.5rem 0.75rem;
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: #000000;
+	outline: none;
+}
+
+.input-container button {
+	padding: 0.5rem 0.75rem;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	background-color: #437bcf;
+	color: #efefef;
+	cursor: pointer;
+}
+
+.input-container button:hover {
+	filter: brightness(1.1);
+}
+
+.input-container button:active {
+	transform: translateY(3%);
+}
+
+.task-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 0.5rem;
+	margin-top: 1.5rem;
+}
+
+.task-container li {
+	font-size: 0.9rem;
+	font-weight: 400;
+	list-style: none;
+	background-color: #8d80da;
+	width: 100%;
+	padding: 0.2rem 0.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.task-container li span {
+	display: flex;
+	gap: 0.2rem;
+}
+
+.task-container .bx-check,
+.task-container .bx-x {
+	font-size: 1.4rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.task-container .bx-check {
+	color: #249d24;
+}
+
+.task-container .bx-check:hover {
+	filter: brightness(1.1);
+}
+
+.task-container .bx-check:active {
+	transform: translateY(3%);
+}
+
+.task-container .bx-x {
+	color: #9a251c;
+}
+
+.task-container .bx-x:hover {
+	filter: brightness(1.1);
+}
+.task-container .bx-x:active {
+	transform: translateY(3%);
+}
